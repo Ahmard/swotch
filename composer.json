@@ -1,0 +1,32 @@
+{
+    "name": "ahmard/swotch",
+    "description": "Swoole File Watcher",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmard",
+            "email": "Ahmard06@gmail.com"
+        }
+    ],
+    "require": {
+        "PHP": "^8.0",
+        "ext-inotify": "*",
+        "ext-swoole": "*",
+        "evenement/evenement": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.90",
+        "phpunit/phpunit": "^9.5",
+        "swoole/ide-helper": "^4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swotch\\": "src/"
+        }
+    },
+    "scripts": {
+        "analyse" : "vendor/bin/phpstan analyse",
+        "test" : "vendor/bin/phpunit"
+    }
+}
